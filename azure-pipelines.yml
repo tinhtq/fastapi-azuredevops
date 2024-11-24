@@ -6,6 +6,10 @@ resources:
   pipelines:
     - pipeline: gitleak
       source: gitleak
+      trigger:
+        branches:
+          include:
+            - main
 
 jobs:
   - job: BuildJob
