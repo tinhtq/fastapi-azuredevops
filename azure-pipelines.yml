@@ -16,4 +16,4 @@ steps:
     artifact: gitleaks-report
 
   - script: |
-      echo "Processing gitleaks report..."
+      echo "Processing gitleaks report.."
