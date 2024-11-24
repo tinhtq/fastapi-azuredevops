@@ -1,0 +1,15 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: "ubuntu-latest"
+
+steps:
+  - task: DownloadPipelineArtifact@2
+    inputs:
+      buildType: "specific"
+      project: "<ProjectName>"
+      pipeline: "<PipelineID>"
+      artifact: "RepoBArtifact"
