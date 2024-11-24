@@ -11,9 +11,10 @@ resources:
           include:
             - main
 
-jobs:
-  - job: BuildJob
-    displayName: "Build and Trigger"
-    steps:
-      - script: echo "Running build process in Pipeline A..."
-      - script: echo "Triggering Pipeline B..."
+steps:
+  - download: gitleak
+    artifact: report # Download the 'report' artifact produced by the gitleak pipeline
+
+  - script: |
+      echo "Processing gitleaks report..."
+      type $(Pipeline.Workspace)/report/gitleaks-report.json
