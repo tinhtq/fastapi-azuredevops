@@ -1,6 +1,7 @@
 trigger:
   - main
 
+pool: myagent
 resources:
   pipelines:
     - pipeline: PipelineBTrigger
