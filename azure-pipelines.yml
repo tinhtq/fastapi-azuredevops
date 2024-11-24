@@ -13,8 +13,7 @@ resources:
 
 steps:
   - download: gitleak
-    artifact: gitleaks-report # Download the 'report' artifact produced by the gitleak pipeline
+    artifact: gitleaks-report
 
   - script: |
       echo "Processing gitleaks report..."
-      type $(Pipeline.Workspace)/report/gitleaks-report.json
