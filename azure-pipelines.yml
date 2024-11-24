@@ -36,4 +36,3 @@ jobs:
             $response = Invoke-RestMethod -Uri $url -Method Post -Headers $headers -Body $body
 
             Write-Output "Pipeline B triggered successfully. Run ID: $($response.id)"
-        pwsh: true
