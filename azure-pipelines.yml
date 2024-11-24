@@ -4,7 +4,7 @@ trigger:
 pool: myagent
 resources:
   pipelines:
-    - pipeline: PipelineBTrigger
+    - pipeline: gitleak
       source: gitleak
 
 jobs:
