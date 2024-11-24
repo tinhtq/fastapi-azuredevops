@@ -13,7 +13,7 @@ resources:
 
 steps:
   - download: gitleak
-    artifact: report # Download the 'report' artifact produced by the gitleak pipeline
+    artifact: gitleaks-report # Download the 'report' artifact produced by the gitleak pipeline
 
   - script: |
       echo "Processing gitleaks report..."
