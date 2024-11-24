@@ -4,7 +4,7 @@ trigger:
       - main
 
 pool:
-  vmImage: "ubuntu-latest"
+  name: "Azure Pipelines"
 
 steps:
   - task: DownloadPipelineArtifact@2
