@@ -10,6 +10,6 @@ steps:
   - task: DownloadPipelineArtifact@2
     inputs:
       buildType: "specific"
-      project: "<ProjectName>"
-      pipeline: "<PipelineID>"
+      project: "gitleak"
+      pipeline: "gitleak"
       artifact: "RepoBArtifact"
